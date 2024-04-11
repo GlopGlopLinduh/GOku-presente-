@@ -5,7 +5,7 @@ local Window = redzlib:MakeWindow({
     SaveFolder = "GLPClientCfg.lua"
   })
 
-  local Tab1 = Window:MakeTab({"Troll EB", "cherry"})
+  local Tab1 = Window:MakeTab({"EB JP Troll", "cherry"})
   local Tab2 = Window:MakeTab({"JJ'S", "swords"})
   local Tab3 = Window:MakeTab({"Ui", "user"})
 
@@ -16,11 +16,11 @@ local Window = redzlib:MakeWindow({
     redzlib:SetTheme("Darker")
   end})
 
-  local Section = Tab1:AddSection({"EB Goku"})
+  local Section = Tab1:AddSection({"EB JPBosta"})
 
-  local Button = Tab2:AddButton({"Click Explode",
+  local Button = Tab2:AddButton({"Kill all (Precisa da Fal)",
   Callback = function ()
- loadstring(game:HttpGet('https://pastefy.app/PEDg33Rb/raw'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseThompson/Scripts-roblox2/main/Script%20kill%20all%20eb%20do%20jplofy"))()
   end})
 
   local Button = Tab2:AddButton({"JJ'S script",
@@ -37,39 +37,7 @@ local Window = redzlib:MakeWindow({
   };
   loadstring(game:HttpGet('https://raw.githubusercontent.com/Zv-yz/AutoJJs/main/Main.lua'))(Options);
   end})
-
-  Tab1:AddTextBox({
-    Name = "Change sem Kill",
-    Description = "Quando você colocar algo na caixa de texto ao lado o script ira trocar a patente de todos do server mais não tem o kill",
-    Default = "Text",
-    Callback = function(Value)
-            local Main = loadstring(game:HttpGet('https://raw.githubusercontent.com/Zv-yz/RBXScripts/master/Scripts/ViethinChange.lua'))()
-            local Config = {
-                BoolValue = true;
-                StringValue = Value;
-                NumberValue = 9999999999999999999999999;
-                IntValue = 9999999999999999999999999;
-            }
-            Main:Change(Config)  
-    end
-  })
-
-  Tab1:AddTextBox({
-    Name = "Change Com Kill",
-    Description = "Quando você colocar algo na caixa de texto ao lado o script ira trocar a patente de todos do server e matar todos tambem",
-    Default = "Coloque o texto aqui",
-    Callback = function(Value)
-        local Main = loadstring(game:HttpGet('https://raw.githubusercontent.com/Zv-yz/RBXScripts/master/Scripts/ViethinChange.lua'))()
-        local Config = {
-            BoolValue = true; -- Que seja true ou false
-            StringValue = Value; -- O valor do TextBox serÃ¡ atribuÃ­do Ã  StringValue
-            NumberValue = 9999999999999999999999999; -- Valor do nÃºmero
-            IntValue = 9999999999999999999999999; -- Valor do nÃºmero
-        }
-        Main:Change(Config)
-    end
-  })
-
+  
 -- fecha e abre a ui
 
   Window:AddMinimizeButton({
