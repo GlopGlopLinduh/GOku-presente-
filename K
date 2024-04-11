@@ -18,7 +18,7 @@ local Window = redzlib:MakeWindow({
 
   local Section = Tab1:AddSection({"EB JPBosta"})
 
-  local Button = Tab2:AddButton({"Kill all (Precisa da Fal)",
+  local Button = Tab1:AddButton({"Kill all (Precisa da Fal)",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseThompson/Scripts-roblox2/main/Script%20kill%20all%20eb%20do%20jplofy"))()
   end})
