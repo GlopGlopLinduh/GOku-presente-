@@ -20,7 +20,7 @@ local Window = redzlib:MakeWindow({
 
   local Button = Tab1:AddButton({"Kill all (Precisa da Fal)",
   Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseThompson/Scripts-roblox2/main/Script%20kill%20all%20eb%20do%20jplofy"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseThompson/Scripts-roblox2/main/Secret"))()
   end})
 
   local Button = Tab2:AddButton({"JJ'S script",
